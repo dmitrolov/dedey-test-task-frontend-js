@@ -1,0 +1,115 @@
+@mixin element-center() {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin vertical-center() {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+@mixin transition($prop, $time, $animationType) {
+  -webkit-transition: $prop $time $animationType;
+  -moz-transition: $prop $time $animationType;
+  -ms-transition: $prop $time $animationType;
+  -o-transition: $prop $time $animationType;
+  transition: $prop $time $animationType;
+}
+
+@mixin transform($prop) {
+  -webkit-transform: $prop;
+  -moz-transform: $prop;
+  -ms-transform: $prop;
+  -o-transform: $prop;
+  transform: $prop;
+}
+
+@mixin pseudo() {
+  display:block;
+  content:'';
+}
+
+@mixin absolute-bg() {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+//@mixin icon() {
+//  font-family: "fontello";
+//  font-style: normal;
+//  font-weight: normal;
+//  speak: none;
+//  display: inline-block;
+//  text-decoration: inherit;
+//  width: 1em;
+//  margin-right: .2em;
+//  text-align: center;
+//  font-variant: normal;
+//  text-transform: none;
+//  line-height: 1em;
+//  margin-left: .2em;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//}
+
+@mixin text-overflow(){
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin bg-block($padding) {
+  position: relative;
+  @include clearfix;
+
+
+  
+  &:before {
+    @include pseudo;
+    float:left;
+    padding-top: $padding;
+  }
+}
+
+@mixin bg-cover {
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin flex {
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin bg-image {
+  position: absolute;
+  @include element-center;
+  min-height: 100%;
+  max-width: 200%;
+}

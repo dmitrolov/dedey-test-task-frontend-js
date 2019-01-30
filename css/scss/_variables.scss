@@ -1,0 +1,107 @@
+$brand-color: #fff;
+$brand-primary: #d5121d;
+$primary-dark: #1a1a1a;
+$primary-color: #74c7d5;
+
+$danger: #d5121d;
+$danger-dark: darken($danger, 15%);
+$success: darken(#00e25b, 10%);
+
+$base-grey: #777;
+
+$body-bg:               #fff !default;
+$white:                 rgb(235, 235, 235);
+$bg-black:              $primary-dark !default;
+$bg-black-transparent: rgba($primary-dark,.4) !default;
+$color-icon:            #d5121d !default;
+$color-red:             $color-icon !default;
+$color-red-transparent: rgba(223, 9, 20, 0.06) !default;
+$transparent-gray: rgba(129, 129, 129, 0.38) !default;
+$color-gray:            #828280 !default;
+$grey-second: #343431;
+$white-gray:            #808080 !default;
+$text-gray:             rgb(65, 65, 65) !default;
+$dark-gray:             #2d2d2d !default;
+$text-color:            #2b2b2b !default;
+$text-grey-light: #a3a3a3;
+$link-color:            blue !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+$green: #217a23;
+
+$grey-light-second: #f4f4f4;
+
+$base-box-shadow:  0 4px 32px 0 rgba(45, 56, 62, 0.12);
+
+$catalog-menu-link: #d6d7d5;
+$header-icons-mobile-color: #878787;
+$btn-primary-active-color: #ff1d25;
+
+$dark-bg: #2d2d2d;
+
+$input-bg: #e3e2e2;
+$dark-input-border: #999998;
+$dark-input-bg: #e1e1e0;
+
+$text-second-color: #414141;
+$border-color: #efefef;
+
+$dark-select: #585856;
+
+$grey-light: #e7e7e7;
+$grey-lighter: #f6f6f6;
+$grey-border: #e1e1e1;
+$grey-border-light: #f2f2f2;
+$grey-text: #808080;
+
+$font-main: 'HelveticaNeueCyr';
+$font-title: 'Roboto';
+
+$border-color: rgba(0,0,0,0.075);
+
+
+
+$screen-xs:                  460px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+$screen-lg:                  1220px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+$grid-columns:              12 !default;
+$grid-gutter-width:         30px !default;
+$gutter-half:         $grid-gutter-width /2 !default;
+$grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+$container-phone:             ($screen-xs - $grid-gutter-width) !default;
+$container-xs:                 $container-phone !default;
+
+
+$container-tablet:             (720px + $grid-gutter-width) !default;
+$container-sm:                 $container-tablet !default;
+
+$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-md:                 $container-desktop !default;
+
+$container-large-desktop:      (1170px + $grid-gutter-width) !default;
+$container-lg:                 $container-large-desktop !default;
+
+
+
+// indexes

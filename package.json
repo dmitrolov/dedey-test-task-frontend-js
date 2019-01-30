@@ -1,0 +1,29 @@
+{
+  "name": "dd-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/hitmaaaaan/dd-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/hitmaaaaan/dd-test/issues"
+  },
+  "homepage": "https://gitlab.com/hitmaaaaan/dd-test#README",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "npm": "^6.1.0"
+  }
+}
